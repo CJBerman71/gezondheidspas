@@ -6,7 +6,7 @@ if (!isset($_GET['id'])) {
     exit;
 }
 
-$id = $_GET['id'];
+$id = $_GET[id];
 
 try {
     $stmt = $db->prepare("DELETE FROM huisarts WHERE id = ?");
@@ -14,4 +14,5 @@ try {
     header('Location: index.php');
 } catch(PDOException $e) {
     die('Fout bij verwijderen: ' . $e->getMessage());
-}<?php
+}
+?>
