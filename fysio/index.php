@@ -34,7 +34,7 @@ $patienten = $stmt->fetchAll(PDO::FETCH_ASSOC);
                             <?= htmlspecialchars($patient['postcode'] . ' ' . $patient['plaats']) ?>
                         </td>
                         <td>
-                            <a href="bekijken.php?id=<?= $patient['id'] ?>" class="btn btn-sm btn-info">Bekijken</a>
+                            <a href="bekijken.php?id=<?= $patient['patientnummer'] ?>" class="btn btn-sm btn-info">Bekijken</a>
                             <a href="bewerken.php?id=<?= $patient['id'] ?>" class="btn btn-sm btn-warning">Bewerken</a>
                             <a href="verwijderen.php?id=<?= $patient['id'] ?>" class="btn btn-sm btn-danger"
                                onclick="return confirm('Weet u zeker dat u deze patiënt wilt verwijderen?')">Verwijderen</a>
