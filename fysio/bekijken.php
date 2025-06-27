@@ -15,6 +15,7 @@ try {
     $patient = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if (!$patient) {
+        //echo"Patient $id niet gevonden";
         header('Location: index.php');
         exit;
     }
