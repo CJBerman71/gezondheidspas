@@ -6,7 +6,7 @@ if (!isset($_GET['id'])) {
     exit;
 }
 
-$id = $_GET[id];
+$id = $_GET['id'];
 
 try {
     $stmt = $db->prepare("DELETE FROM huisarts WHERE id = ?");
