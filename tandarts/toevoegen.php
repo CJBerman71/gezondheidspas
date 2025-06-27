@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             ':adres' => $_POST['adres'],
             ':postcode' => $_POST['postcode'],
             ':woonplaats' => $_POST['woonplaats'],
-            ':verzekeringsnummer' => $_POST['verzekeringsnummer'],
+            ':verzekeringsnummer' => $_POST['verzekerings-nummer'],
             ':laatste_behandeling' => $_POST['laatste_behandeling']
         ]);
 
